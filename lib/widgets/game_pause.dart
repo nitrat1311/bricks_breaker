@@ -1,7 +1,7 @@
-import 'package:bricks_breaker/bricks_breaker.dart';
-import 'package:bricks_breaker/utils/constants.dart';
-import 'package:bricks_breaker/widgets/game_button.dart';
-import 'package:bricks_breaker/widgets/game_score.dart';
+import 'package:ball_master/ball_master.dart';
+import 'package:ball_master/utils/constants.dart';
+import 'package:ball_master/widgets/game_button.dart';
+import 'package:ball_master/widgets/game_score.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +33,7 @@ class GamePause extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const Text(
-                'SCORE',
+                'LVL Passed',
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
               const SizedBox(height: 10),

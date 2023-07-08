@@ -1,11 +1,11 @@
-import 'package:bricks_breaker/bricks_breaker.dart';
-import 'package:bricks_breaker/components/ball.dart';
-import 'package:bricks_breaker/utils/constants.dart';
+import 'package:ball_master/ball_master.dart';
+import 'package:ball_master/components/ball.dart';
+import 'package:ball_master/utils/constants.dart';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
 
-class Brick extends PositionComponent
+class Brick extends SpriteComponent
     with CollisionCallbacks, HasGameRef<BricksBreaker> {
   Brick({
     required this.brickValue,
@@ -18,10 +18,17 @@ class Brick extends PositionComponent
   bool hasCollided = false;
   late final TextComponent brickText;
   late final RectangleHitbox rectangleBrickHitBox;
-  late final RectangleComponent rectangleBrick;
+  late final SpriteComponent rectangleBrick;
 
   @override
   Future<void> onLoad() async {
+          await gameRef.images.loadAll([
+        'brick.webp',
+      ]);
+
+          sprite = await gameRef.loadSprite(
+      'brick.webp',
+    );
     if (brickValue <= 0) {
       removeFromParent();
       return;
@@ -58,9 +65,10 @@ class Brick extends PositionComponent
     return TextComponent(
       text: '$brickValue',
       textRenderer: TextPaint(
-        style: const TextStyle(
-          color: Color(brickFontColor),
+        style:  TextStyle(
+          color: const Color(brickFontColor),
           fontSize: brickFontSize,
+          background: Paint()..color=const Color(textBackColor)
         ),
       ),
     )..center = size / 2;
@@ -72,8 +80,9 @@ class Brick extends PositionComponent
     );
   }
 
-  RectangleComponent createBrickRectangleComponent() {
-    return RectangleComponent(
+  SpriteComponent createBrickRectangleComponent() {
+    return SpriteComponent(
+      sprite: sprite,
       size: size,
       paint: Paint()
         ..style = PaintingStyle.fill

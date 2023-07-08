@@ -1,4 +1,4 @@
-# bricks_breaker
+# ball_master
 
 A new Flutter project.
 

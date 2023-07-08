@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:bricks_breaker/bricks_breaker.dart';
-import 'package:bricks_breaker/utils/constants.dart';
+import 'package:ball_master/ball_master.dart';
+import 'package:ball_master/utils/constants.dart';
 import 'package:flame/collisions.dart';
 
 import 'package:flame/components.dart';

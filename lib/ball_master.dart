@@ -1,10 +1,10 @@
 import 'dart:math';
 
-import 'package:bricks_breaker/components/ball.dart';
-import 'package:bricks_breaker/components/board.dart';
-import 'package:bricks_breaker/components/brick.dart';
-import 'package:bricks_breaker/managers/game_manager.dart';
-import 'package:bricks_breaker/utils/constants.dart';
+import 'package:ball_master/components/ball.dart';
+import 'package:ball_master/components/board.dart';
+import 'package:ball_master/components/brick.dart';
+import 'package:ball_master/managers/game_manager.dart';
+import 'package:ball_master/utils/constants.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 

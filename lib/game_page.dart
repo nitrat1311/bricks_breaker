@@ -1,8 +1,8 @@
-import 'package:bricks_breaker/bricks_breaker.dart';
-import 'package:bricks_breaker/utils/constants.dart';
-import 'package:bricks_breaker/widgets/game_over.dart';
-import 'package:bricks_breaker/widgets/game_pause.dart';
-import 'package:bricks_breaker/widgets/game_top_bar.dart';
+import 'package:ball_master/ball_master.dart';
+import 'package:ball_master/utils/constants.dart';
+import 'package:ball_master/widgets/game_over.dart';
+import 'package:ball_master/widgets/game_pause.dart';
+import 'package:ball_master/widgets/game_top_bar.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 

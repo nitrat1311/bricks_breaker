@@ -1,5 +1,5 @@
-import 'package:bricks_breaker/bricks_breaker.dart';
-import 'package:bricks_breaker/widgets/game_score.dart';
+import 'package:ball_master/ball_master.dart';
+import 'package:ball_master/widgets/game_score.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 
@@ -18,25 +18,26 @@ class GameTopBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(
+      IconButton(
+            icon: const Icon(
+              Icons.speed,
+              size: 32,
+            ),
+            onPressed: () {
+              (game as BricksBreaker).increaseBallSpeed();
+            },
+          ),
+          GameScore(
+            game: game,
+          ),
+    
+                    IconButton(
             icon: const Icon(
               Icons.settings,
               size: 32,
             ),
             onPressed: () {
               (game as BricksBreaker).togglePauseState();
-            },
-          ),
-          GameScore(
-            game: game,
-          ),
-          IconButton(
-            icon: const Icon(
-              Icons.bolt,
-              size: 32,
-            ),
-            onPressed: () {
-              (game as BricksBreaker).increaseBallSpeed();
             },
           ),
         ],

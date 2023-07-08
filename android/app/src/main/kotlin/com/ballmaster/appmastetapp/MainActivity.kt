@@ -1,4 +1,4 @@
-package com.example.bricks_breaker
+package com.ballmaster.appmastetapp
 
 import io.flutter.embedding.android.FlutterActivity
 

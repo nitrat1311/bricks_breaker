@@ -1,10 +1,10 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bricks_breaker/bricks_breaker.dart';
-import 'package:bricks_breaker/components/board.dart';
-import 'package:bricks_breaker/components/brick.dart';
-import 'package:bricks_breaker/utils/constants.dart';
+import 'package:ball_master/ball_master.dart';
+import 'package:ball_master/components/board.dart';
+import 'package:ball_master/components/brick.dart';
+import 'package:ball_master/utils/constants.dart';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +31,7 @@ class Ball extends CircleComponent
   Vector2 aimTriangleBasePoint = Vector2.zero();
   List<Rect> aimPointerBalls = [];
   final aimPainter = Paint()
-    ..color = Colors.white
+    ..color = Colors.red
     ..style = PaintingStyle.fill;
 
   @override

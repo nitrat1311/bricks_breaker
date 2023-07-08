@@ -1,4 +1,4 @@
-import 'package:bricks_breaker/bricks_breaker_game.dart';
+import 'package:ball_master/ball_master_game.dart';
 import 'package:flutter/material.dart';
 
 void main() {

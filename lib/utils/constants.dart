@@ -9,7 +9,8 @@ enum BallState {
 
 const ballRadius = 10.0;
 
-const ballColor = 0xFFFFFFFF;
+const ballColor = 0xFFF44336;
+const textBackColor = 0xFF000000;
 
 const brickColor = 0xFF24998B;
 const brickFontColor = 0xFFFFFFFF;
@@ -20,7 +21,7 @@ const brickPadding = 8;
 const maxValueOfBrick = 10;
 const minValueOfBrick = -5;
 
-const panelColor = 0xFF1B1B1B;
+const panelColor = 0xFF533501;
 
 const Color startButtonColor = Color.fromRGBO(235, 32, 93, 1);
 const Color continueButtonColor = Color.fromRGBO(235, 32, 93, 1);

@@ -1,5 +1,5 @@
-import 'package:bricks_breaker/game_page.dart';
-import 'package:bricks_breaker/utils/constants.dart';
+import 'package:ball_master/game_page.dart';
+import 'package:ball_master/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class BricksBreakerGame extends StatelessWidget {
